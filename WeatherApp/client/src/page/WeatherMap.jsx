@@ -23,7 +23,7 @@ const WeatherMap = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/weather?page=${page}`
+          `https://jolly-ruby-colt.cyclic.app/weather?page=${page}`
         );
         setWeatherData(response.data.data);
         console.log(response.data.data);
